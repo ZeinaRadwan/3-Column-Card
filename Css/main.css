@@ -1,0 +1,277 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:root {
+  --top-text: 100px;
+  --left-text: 75px;
+  --top-icon: 45px;
+  --font-size-h1: 42px;
+  --main-color-first-column: hsl(31, 77%, 52%);
+  --main-color-second-column: hsl(184, 100%, 22%);
+  --main-color-third-column: hsl(179, 100%, 13%);
+  --border-raduis-button: 30px;
+}
+body {
+  font-family: "Big Shoulders Display", cursive;
+  font-family: "Lexend Deca", sans-serif;
+  background-color: hsl(0, 0%, 95%);
+}
+.parent {
+  width: 1000px;
+  height: 550px;
+  max-width: 100%;
+  margin-left: 165px;
+  margin-top: 135px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(333.3px, 1fr));
+  position: relative;
+  top: 50%;
+  left: 50px;
+}
+.parent .first-column {
+  background-color: var(--main-color-first-column);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  position: relative;
+}
+.parent .first-column .icon-se {
+  position: absolute;
+  top: var(--top-icon);
+  transform: translateX(55px);
+  max-width: 100%;
+}
+.parent .first-column .text {
+  position: absolute;
+  top: var(--top-text);
+  left: var(--left-text);
+}
+.parent .first-column .text h1 {
+  text-transform: uppercase;
+  color: hsl(0, 0%, 95%);
+  font-size: var(--font-size-h1);
+  letter-spacing: -1.2px;
+  margin-left: -20px;
+  font-family: "Big Shoulders Display", cursive;
+}
+.parent .first-column .text p {
+  position: absolute;
+  top: 95px;
+  transform: translateX(66px);
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 15px;
+  margin-left: -88px;
+  line-height: 1.8;
+  margin-right: -35px;
+}
+.parent .first-column button {
+  background-color: hsl(0, 0%, 95%);
+  border-radius: var(--border-raduis-button);
+  position: absolute;
+  left: 55px;
+  bottom: 65px;
+  width: 155px;
+  height: 55px;
+  color: var(--main-color-first-column);
+  border-color: hsl(0, 0%, 95%);
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+}
+.parent .first-column button:hover {
+  background-color: var(--main-color-first-column);
+  color: hsl(0, 0%, 95%);
+}
+.parent .second-column {
+  background-color: var(--main-color-second-column);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+.parent .second-column .icon-su {
+  position: absolute;
+  top: var(--top-icon);
+  transform: translateX(55px);
+  max-width: 100%;
+}
+.parent .second-column .text {
+  position: absolute;
+  top: var(--top-text);
+  left: var(--left-text);
+}
+.parent .second-column .text h1 {
+  text-transform: uppercase;
+  transform: translateX(-15px);
+  color: hsl(0, 0%, 95%);
+  font-size: var(--font-size-h1);
+  letter-spacing: -1.2px;
+  font-family: "Big Shoulders Display", cursive;
+}
+.parent .second-column .text p {
+  position: absolute;
+  top: 95px;
+  transform: translateX(65px);
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 15px;
+  margin-left: -88px;
+  line-height: 1.8;
+  margin-right: -55px;
+}
+.parent .second-column button {
+  background-color: hsl(0, 0%, 95%);
+  border-radius: var(--border-raduis-button);
+  position: absolute;
+  left: 55px;
+  bottom: 65px;
+  width: 155px;
+  height: 55px;
+  color: var(--main-color-second-column);
+  border-color: hsl(0, 0%, 95%);
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+}
+.parent .second-column button:hover {
+  background-color: var(--main-color-second-column);
+  color: hsl(0, 0%, 95%);
+}
+.parent .third-column {
+  background-color: var(--main-color-third-column);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: relative;
+}
+.parent .third-column .icon {
+  position: absolute;
+  top: var(--top-icon);
+  transform: translateX(55px);
+  max-width: 100%;
+}
+.parent .third-column .text {
+  position: absolute;
+  top: var(--top-text);
+  left: var(--left-text);
+}
+.parent .third-column .text h1 {
+  text-transform: uppercase;
+  color: hsl(0, 0%, 95%);
+  font-size: var(--font-size-h1);
+  letter-spacing: -1.2px;
+  margin-left: -15px;
+  font-family: "Big Shoulders Display", cursive;
+}
+.parent .third-column .text p {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 15px;
+  line-height: 1.8;
+  margin-left: -45px;
+  margin-top: 25px;
+  padding-left: 30px;
+  padding-right: 55px;
+}
+.parent .third-column button {
+  background-color: hsl(0, 0%, 95%);
+  border-radius: var(--border-raduis-button);
+  position: absolute;
+  left: 55px;
+  bottom: 65px;
+  width: 155px;
+  height: 55px;
+  color: var(--main-color-third-column);
+  border-color: hsl(0, 0%, 95%);
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+}
+.parent .third-column button:hover {
+  background-color: var(--main-color-third-column);
+  color: hsl(0, 0%, 95%);
+}
+.footer {
+  font-size: 15px;
+  text-align: center;
+  margin-top: 30px;
+}
+.footer a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
+.footer a:visited {
+  color: hsl(179, 100%, 13%);
+}
+@media (max-width: 767px) {
+  .parent {
+    grid-template-rows: repeat(auto-fill, minmax(483.3px, 1fr));
+    margin-left: -35px;
+    margin-top: 100px;
+    height: 1450px;
+    width: 100px;
+  }
+  .parent .first-column {
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+  }
+  .parent .first-column .text p {
+    font-size: 13px;
+  }
+  .parent .second-column .text p {
+    font-size: 13px;
+  }
+  .parent .third-column {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+  }
+  .parent .third-column .text p {
+    font-size: 13px;
+    padding-right: 75px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  .parent {
+    width: 750px;
+    height: 500px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+  .parent .first-column .text h1 {
+    margin-left: -25px;
+  }
+  .parent .first-column .text p {
+    font-size: 13px;
+    transform: translateX(60px);
+  }
+  .parent .first-column button {
+    bottom: 85px;
+    width: 135px;
+  }
+  .parent .second-column .text p {
+    font-size: 13px;
+    transform: translateX(60px);
+  }
+  .parent .second-column .text h1 {
+    transform: translateX(-25px);
+  }
+  .parent .second-column button {
+    bottom: 85px;
+    width: 135px;
+  }
+  .parent .third-column .text h1 {
+    margin-left: -25px;
+  }
+  .parent .third-column .text p {
+    font-size: 13px;
+    margin-left: -55px;
+    padding-right: 25px;
+  }
+  .parent .third-column button {
+    bottom: 85px;
+    width: 135px;
+  }
+}
